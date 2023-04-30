@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/PLAYER TWO/Platformer Project/Examples/Scenes/TitleScreen.unity
+    guid: 1cf5eb096d96e6c45b07b597b5bdde05
+  - enabled: 1
+    path: Assets/PLAYER TWO/Platformer Project/Examples/Scenes/FileSelect.unity
+    guid: 784a971f04705024890fd845c19c2832
+  - enabled: 1
+    path: Assets/PLAYER TWO/Platformer Project/Examples/Scenes/LevelSelect.unity
+    guid: 1334fc2701a18a04287675bd4ebab3ac
+  - enabled: 1
+    path: Assets/PLAYER TWO/Platformer Project/Examples/Scenes/TestLevelScene.unity
+    guid: 278a551158294f341b62da4310b65882
   m_configObjects: {}
