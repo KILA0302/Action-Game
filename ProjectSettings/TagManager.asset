@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Hazard
+  - Platform
+  - Pole
+  - Panel
+  - Spring
+  - Surface/Grass
+  - Surface/Wood
+  - Surface/Metal
+  - Volume/Water
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Post Processing
+  - 
+  - Ignore Projector
+  - Camera Obstructor
+  - Ignore Ledge Hanging
+  - Ignore Ledge Climbing
+  - Unstable Surface
+  - Ignore Wall Sliding
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
