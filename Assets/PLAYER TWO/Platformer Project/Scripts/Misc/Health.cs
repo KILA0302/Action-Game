@@ -6,8 +6,11 @@ namespace PLAYERTWO.PlatformerProject
 	[AddComponentMenu("PLAYER TWO/Platformer Project/Misc/Health")]
 	public class Health : MonoBehaviour
 	{
+        //HPの初期値
 		public int initial = 3;
+        //HPの最大値
 		public int max = 3;
+        //ダメージをくらってからの無敵時間
 		public float coolDown = 1f;
 
 		/// <summary>
@@ -17,10 +20,12 @@ namespace PLAYERTWO.PlatformerProject
 
 		/// <summary>
 		/// Called when it receives damage.
-		/// </summary>
+		/// </summary>sa
 		public UnityEvent onDamage;
 
+        //現在のHP
 		protected int m_currentHealth;
+        //ダメージをくらってからの経過時間
 		protected float m_lastDamageTime;
 
 		/// <summary>
@@ -43,29 +48,29 @@ namespace PLAYERTWO.PlatformerProject
 		}
 
 		/// <summary>
-		/// Returns true if the Health is empty.
+		/// HPがあるかを返す
 		/// </summary>
 		public virtual bool isEmpty => current == 0;
 
 		/// <summary>
-		/// Returns true if it's still recovering from the last damage.
+		/// 攻撃をくらってからの無敵時間フラグを立てる
 		/// </summary>
 		public virtual bool recovering => Time.time < m_lastDamageTime + coolDown;
 
 		/// <summary>
-		/// Sets the current health to a given amount.
+		/// HPを引数値に変更
 		/// </summary>
 		/// <param name="amount">The total health you want to set.</param>
 		public virtual void Set(int amount) => current = amount;
 
 		/// <summary>
-		/// Increases the amount of health.
+		/// HPを増加させる
 		/// </summary>
 		/// <param name="amount">The amount you want to increase.</param>
 		public virtual void Increase(int amount) => current += amount;
 
 		/// <summary>
-		/// Decreases the amount of health.
+		/// ダメージを与える
 		/// </summary>
 		/// <param name="amount">The amount you want to decrease.</param>
 		public virtual void Damage(int amount)
@@ -79,7 +84,7 @@ namespace PLAYERTWO.PlatformerProject
 		}
 
 		/// <summary>
-		/// Set the current health back to its initial value.
+		/// HPの初期化
 		/// </summary>
 		public virtual void Reset() => current = initial;
 
